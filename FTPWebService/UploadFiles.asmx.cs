@@ -20,9 +20,9 @@ namespace FTPWebService
         [WebMethod]
         public string SaveAndUpload()
         {
-            UploadFileToServer("ftp://cloudplatform.iconnix.co.za", "Mobile1", "Mobile1",@"C:\NashuaReports");
+            UploadFileToServer("ftp://cloudplatform.iconnix.co.za", "Mobile1", "Mobile1", @"C:\DDImports");
 
-            DeleteFiles(@"C:\NashuaReports");
+            DeleteFiles(@"C:\DDImports");
             return _message;
         }
 
